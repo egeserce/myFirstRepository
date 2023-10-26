@@ -5,8 +5,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div>
-        <p>Yarrak
-        </p>
+        <p>Yarrak Arda</p>
       </div>
       <Head>
         <title>Create Next App</title>
