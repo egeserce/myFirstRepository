@@ -1,0 +1,95 @@
+<!-- HTML5 Semantic Tags-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Blog</title>
+	<!--"meta" gives some key words and stuff like that -->
+	<meta  name="description" content="Awesome blog by Ata Bayraktar">
+	<meta name="keywords" content="web desgin blogi web dev blog, ata bayraktar">
+
+	<!-- normally css is written in an external css file but you can write it in head area in a "style" tag. -->
+	<!--id is represented with "#" so "#main-header is the headers id-->
+	<style type="text/css">
+		#main-header{ 
+			text-align:center;
+			background-color: aqua !important;
+			color:black;
+			padding:10px;
+		}
+		#main-footer{
+			text-align: center;
+			background-color: aqua !important;
+			color:black;
+			font-size: 18px;
+		}
+	</style>
+</head>
+<body>
+	<header id="main-header"> <!-- sometimes there can be more than one header or footer so give them an id r a class -->
+		<h1>My Website</h1>
+	</header>
+
+	<a href="index.html">Go to Index!</a>
+	<br>
+	<br>
+	<img src="Images/html5.jpg">
+	<br>
+
+	<section>
+		<article class="post">
+			<h3>Blog Post One</h3>
+			<small>Posted by Ata on February 25</small> <!-- "small" for small texts -->
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<!-- dont use "br" here to go to next line because "p" is a block level tag. -->
+			<a href="post.html">Read More</a>
+		</article>
+		
+		<article class="post">
+			<h3>Blog Post Two</h3>
+			<small>Posted by Ata on February 25</small> <!-- "small" for small texts -->
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<a href="post.html">Read More</a>
+		</article>
+
+		<article class="post">
+			<h3>Blog Post Three</h3>
+			<small>Posted by Ata on February 25</small> <!-- "small" for small texts -->
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+			<a href="post.html">Read More</a>
+		</article>
+	</section>
+	
+	<!-- Sidebar --> <!-- use css to float side left or right for a side bar. -->
+	<aside>
+		<h3>Categories</h3>
+		<nav> <!-- "nav" is for customization for css. -->
+			<ul>
+				<li><a href="#">Category 1</a><</li> <!-- "#" is a representation for same page to link. -->
+				<li><a href="#">Category 2</a></li>
+				<li><a href="#">Category 3</a></li>
+			</ul>
+		</nav>
+	</aside>
+
+	<!--Footer -->
+	<footer id="main-footer">
+		<p>Copyright &copy; 2017, Ata Bayraktar</p> <!-- "&copy;" is for creating copyright symbol -->
+	</footer>
+
+</body>
+</html>

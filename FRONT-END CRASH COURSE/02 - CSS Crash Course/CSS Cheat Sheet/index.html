@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Cheat Sheet</title>
+	<style type="text/css">  /*dont sue this type of Internal styling */
+		h2{
+			color: blue;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- extrenal styling with external css file -->
+</head>
+<body>
+
+	<div class="box-model-img">
+		<img src="img/box-model.jpg">
+		<h5>Padding is the space inside, margin is the space outside</h5>
+	</div>
+
+	<div class="container">
+
+		<h1 style="color:red">Hello World Inline</h1> <!-- dont use this type of inline css-->
+		<h2>Hello World Internal - First Box</h2>
+		<div class="box-1"> <!-- use class when u think you'll use it again, use id if its unique, mostly use class, boostrao uses class-->
+			<h3>Hello World External</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="box-2"> 
+			<h3>Second Box</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<a class="button" href="">Read More</a>
+		</div>
+		<div class="categories">
+			<h2>Categories</h2>
+			<ul>
+				<li><a href="#">Category 1</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Category 2</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Category 3</a></li>
+			</ul>
+		</div>
+
+		<form class="my-form">
+			<div class="form-group"> 
+				<label>First Name</label>
+				<input type="text" name="firstName" placeholder="Enter First Name">
+			</div>  
+			<div class="form-group">
+				<label>E-mail</label>
+				<input type="email" name="email">
+			</div> 
+			<div class="form-group">
+				<label>Message</label>
+				<textarea name="message"></textarea>
+			</div> 
+			<input class="button" type="submit" value="Submit" name="">
+		</form>
+
+		<div class="block">
+			<h3>Heading</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			</p>
+		</div>
+		<div class="block">
+			<h3>Heading</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			</p>
+		</div>
+		<div class="block">
+			<h3>Heading</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			</p>
+		</div>
+
+		<div clas=clr></div>
+		<div id="main-block">
+			<h3>Heading</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			</p>
+		</div>
+		<div id="side-bar">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			</p>
+		</div>
+		<div class=clr></div>
+		
+		<div class="p-box">
+			<h1>Hello</h1>
+			<h2>Good bye</h2>
+		</div>
+
+		<ul class="my-list">
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+		</ul>
+
+	</div> <!-- container -->
+	<a class="fix-me button" href="">Fixed position</a>
+	<div style="margin-top:500px"></div> 
+</body>
+</html>

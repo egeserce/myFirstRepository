@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HTML Cheat Sheet </title>
+</head>
+	<body>
+		<a href="blog.html">Go to Blog!</a>
+		<br>
+
+		<!-- Headings -->
+		<h1>My First Heading</h1>
+		<h2>My Second Heading</h2>
+		<h3>My Third Heading</h3>
+		<h4>My Fourth Heading</h4>
+		<h5>My Fifth Heading</h5>
+		<h6>My Sixth Heading</h6>
+
+		<!-- Paragraphs -->
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud <strong>exercitation ullamco laboris nisi ut aliquip ex velit ea commodo</strong> consequat. <em> Duis aute irure dolor in reprehenderit in </em> Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<!-- "strong" makes text bold --> <!-- "em" makes text italic -->
+		<!-- But these can be change with css -->
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor <a href="http://google.com" target="_blank">incididunt ut labore et dolore magna veniam aliqua.</a>  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<!-- "a" makes text link, target="_blank" makes link as an extertnal link which opens in another tab. -->
+		<!-- "href" is a tag. Tags provide info about an element which placed within the start tag. -->
+
+		<!-- Lists -->
+		<!-- Unordered List -->
+		<ul>
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>List Item 3</li>
+			<li>List Item 4</li>
+		</ul>	
+		<!-- Can be customized with css -->
+		<!-- Ordered List -->
+		<ol>
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>List Item 3</li>
+			<li>List Item 4</li>
+		</ol>
+
+		<!-- Tables -->
+		<table>
+			<thead>
+				<tr> <!-- table row -->
+					<th>Name</th>
+					<th>Surname</th>
+					<th>E-mail</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Ata</td>
+					<td>Bayraktar</td>
+					<td>atabayraktar17@gmail.com</td>
+				</tr>
+				<tr>
+					<td>Ata</td>
+					<td>Bayraktar</td>
+					<td>atabayraktar17@gmail.com</td>
+				</tr>
+				<tr>
+					<td>Ata</td>
+					<td>Bayraktar</td>
+					<td>atabayraktar17@gmail.com</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br> <!-- to seperate things css is used but "br" break a line-->
+		<hr> <!-- "hr" puts a line -->
+		<br>
+
+		<!-- Forms -->
+		<form action="process.php" method="POST"> <!-- Connetction to from to API -->
+			<div> <!-- "div" is a block level element so it puts other form in another line-->
+				<label>First Name</label>
+				<input type="text" name="firstName" placeholder="Enter First Name"> <!-- "name" comes from API --> <!-- "placeholder" is a text which disappers when typing -->
+			</div>  
+			<br>
+			<div>
+				<label>Last Name</label>
+				<input type="text" name="lastName">
+			</div> 
+			<br>
+			<div>
+				<label>E-mail</label>
+				<input type="email" name="email"> <!-- "email" is a type for e-mails -->
+			</div> 
+			<br>
+			<div>
+				<label>Message</label>
+				<textarea name="message"></textarea> <!-- "name" comes from API -->
+				<!-- "textarea" is a special input for texts -->
+			</div>
+			<br>
+			<div>
+				<label>Gender</label>
+				<select name="gender"> 
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+				</select>
+			<div/>
+			<br>
+			<div>
+				<label>Age:</label>
+				<input type="number" name="age" value="30">  <!-- "value" can be predefined -->
+			</div>
+			<br>
+			<div>
+				<label>Birthday:</label>
+				<input type="date" name="birthday">  <!-- "date" is type for dates -->
+			</div>
+			<br>
+			<input type="submit" name="submit" value="Submit!"> <!-- "submit" submits this form to the API which is given in the form element -->
+		</form>
+
+		<!-- Button -->
+		<button click="someFunction from JS">Click Me!</button>
+
+		<!-- Images -->
+		<a href="Images/sago.jpg " target="_blank"> <!-- give link to img -->
+			<img src="Images/sago.jpg" alt="Image Cannot Found" width="500"> <!-- "width" changes the width of the img, usually do it with css --> <!-- "alt" shows the text if the img cant found-->
+		</a>
+
+		<!-- Quotations -->
+		<blockquote cite="http://twitter.com">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</blockquote> <!-- for quote and cite, customize with css -->
+		<p><abbr title="Structured Query Language">SQL</abbr> sucks. </p> <!-- "abbr" show extra info about given text -->
+		<p><cite>HTML Cheat Sheet</cite> from Ata Bayraktar</p> <!-- "cite" cites the given text.-->
+
+
+		<div style="margin-top:500px"></div> <!-- to get the slider from incresing the page margin -->
+	</body>
+</html>
