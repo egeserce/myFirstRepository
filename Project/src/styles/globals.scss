@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=Open+Sans:wght@300&family=Young+Serif&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.special-header {
+  background-color: red;
+  display: flex; //orta sağ sol için kounmlandırmaya yarıyor yan yana getiriyor içindekileri
+  //flex-direction: column; flex normalde otomotik olarak flex-direction: row olarak geliyor. itemler yanyana gelsin istemiyorsan columa çevir.
+  justify-content: center; //x ekseninde konumlandırma orta: center başlangıç: flex-start son: flex-end
+  align-items: center; //y ekseninde konumlandırma orta: center başlangıç: flex-start son: flex-end
+  img {
+    height: 60px;
+    width: 1140px;
+  }
+}
+.header {
+  display: flex;
+  gap: 120px; // itemlar (çocuklar) arasındaki gap/uzaklık
+  justify-content: center;
+  margin-left: 130px; // dışardaki boşluklar
+  .titles {
+    display: flex;
+    gap: 15px; //flex içindeki itemlar arasındaki eşit uzaklığı değiştirme
+    .title {
+      padding: 15px 5px; // içerdeki boşluklar
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+  .support-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    .support-item {
+      display: flex;
+      gap: 5px;
+      img {
+        padding: 15px 0;
+        height: 25px;
+        width: 25px;
+      }
+      .title {
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+        font-size: 12px;
+        font-weight: 700;
+      }
+    }
+  }
+}
